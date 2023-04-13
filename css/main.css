@@ -174,6 +174,13 @@
   padding-right: 40px;
 }
 
+@media screen and (min-width: 1200px) {
+  .needMorePD {
+    padding: 0px 130px;
+    margin-top: 20px;
+  }
+}
+
 :root {
   --main-title-color: #ffffff;
   --second-title-color: #212121;
@@ -1713,7 +1720,7 @@
 .modal__popup-title {
   font-size: 22px;
   font-weight: 800;
-  color: #ae2538;
+  color: #ff5200;
   text-shadow: 0 0 2px black;
   text-shadow: 0 0 2px #766f6f;
 }
@@ -3502,7 +3509,7 @@ ins {
 .modal__popup-title {
   font-size: 22px;
   font-weight: 800;
-  color: #ae2538;
+  color: #ff5200;
   text-shadow: 0 0 2px black;
   text-shadow: 0 0 2px #766f6f;
 }
@@ -4060,7 +4067,7 @@ a:hover {
   padding: 20px;
   text-align: center;
   font-weight: 800;
-  color: #ae2538;
+  color: #ff5200;
   margin-bottom: 0px;
   letter-spacing: 1.1px;
 }
@@ -4095,14 +4102,14 @@ a:hover {
 }
 
 .underline {
-  color: #ae2538;
+  color: #ff5200;
   text-decoration: underline;
   font-weight: 600;
 }
 @media screen and (min-width: 1200px) {
   .underline {
     font-weight: 600;
-    color: #ae2538;
+    color: #ff5200;
   }
 }
 
@@ -4642,7 +4649,7 @@ input::placeholder {
 .form__p {
   font-size: 39px;
   font-weight: 600;
-  color: #ae2538;
+  color: #ff5200;
 }
 
 .icon__raiting {
@@ -4836,7 +4843,7 @@ input::placeholder {
 }
 
 .button__hero:focus {
-  color: #ae2538;
+  color: #ff5200;
 }
 
 .hvr-grow {
@@ -4904,7 +4911,7 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ae2538;
+  background-color: #ff5200;
   min-height: 20px;
   left: 11px;
   min-width: 20px;
@@ -4930,7 +4937,7 @@ input::placeholder {
   position: absolute;
   min-width: 20px;
   padding: 0;
-  background-color: #ae2538;
+  background-color: #ff5200;
   border-radius: 50%;
   color: #fff !important;
   min-height: 20px;
@@ -4951,7 +4958,7 @@ input::placeholder {
   top: 11px;
   min-height: 20px;
   position: absolute;
-  background-color: #ae2538;
+  background-color: #ff5200;
   left: 11px;
   color: #fff;
   min-width: 20px;
@@ -4975,7 +4982,7 @@ input::placeholder {
   top: 11px;
   min-height: 20px;
   left: 11px;
-  background-color: #ae2538;
+  background-color: #ff5200;
   padding: 0;
   border-radius: 50%;
   min-width: 20px;
@@ -4995,11 +5002,10 @@ input::placeholder {
   line-height: 1;
   text-align: center;
   cursor: pointer;
-  color: rgb(1, 43, 30);
   text-decoration: none;
-  padding: 20px 72px;
+  padding: 20px 66px;
   text-transform: uppercase;
-  background: linear-gradient(180deg, #da3315 -7.29%, #fe9919 130.21%);
+  background: linear-gradient(180deg, #601600 -7.29%, #bb7c38 130.21%);
   border: none;
   font-weight: 800;
   margin-top: 15px;
@@ -5155,7 +5161,7 @@ button {
 .color {
   font-weight: 600;
   margin-bottom: 10px;
-  color: #ae2538;
+  color: #ff5200;
 }
 
 .footer__tems-underline {

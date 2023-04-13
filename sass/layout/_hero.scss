@@ -148,3 +148,10 @@
 .needPD {
   padding-right: 40px;
 }
+
+.needMorePD {
+  @media screen and (min-width: 1200px) {
+    padding: 0px 130px;
+    margin-top: 20px;
+  }
+}
