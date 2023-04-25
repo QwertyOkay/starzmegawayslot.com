@@ -103,3 +103,20 @@ $footerWeight: 800;
   height: 44px;
   margin-bottom: 5px;
 }
+
+.footerSocials {
+  flex-direction: row;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.footerIcons {
+  background: #a1232d;
+  border-radius: 27px;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+}

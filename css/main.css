@@ -181,6 +181,26 @@
   }
 }
 
+.heroButton {
+  top: 10%;
+  left: 15%;
+  display: block;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  padding: 15px 40px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+}
+
+.hero__a {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 70px;
+}
+
 :root {
   --main-title-color: #ffffff;
   --second-title-color: #212121;
@@ -5181,4 +5201,21 @@ button {
 .footer__plus {
   height: 44px;
   margin-bottom: 5px;
+}
+
+.footerSocials {
+  flex-direction: row;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.footerIcons {
+  background: #a1232d;
+  border-radius: 27px;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
