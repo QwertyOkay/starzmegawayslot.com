@@ -1728,8 +1728,8 @@ $social-background-color: rgba(255, 255, 255, 0.1);
   text-align: center;
   text-decoration-line: underline;
   text-transform: capitalize;
-
   color: #000000;
+  cursor: pointer;
 }
 
 .cookiebar__button {
@@ -1755,6 +1755,7 @@ $social-background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
   width: 170px;
   margin: 0px auto;
+  cursor: pointer;
 
   @media screen and (min-width: 1200px) {
     width: 142px;

@@ -1868,6 +1868,7 @@
   text-decoration-line: underline;
   text-transform: capitalize;
   color: #000000;
+  cursor: pointer;
 }
 
 .cookiebar__button {
@@ -1890,6 +1891,7 @@
   align-items: center;
   width: 170px;
   margin: 0px auto;
+  cursor: pointer;
 }
 @media screen and (min-width: 1200px) {
   .cookiebar__button {
@@ -3786,6 +3788,7 @@ ins {
   text-decoration-line: underline;
   text-transform: capitalize;
   color: #000000;
+  cursor: pointer;
 }
 
 .cookiebar__button {
@@ -3808,6 +3811,7 @@ ins {
   align-items: center;
   width: 170px;
   margin: 0px auto;
+  cursor: pointer;
 }
 @media screen and (min-width: 1200px) {
   .cookiebar__button {
