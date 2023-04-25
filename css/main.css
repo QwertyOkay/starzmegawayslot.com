@@ -193,6 +193,7 @@
   border-radius: 15px;
   background: #10021e;
   text-decoration: underline;
+  letter-spacing: 0.04em;
 }
 
 .hero__a {
