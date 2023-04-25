@@ -958,6 +958,71 @@ $social-background-color: rgba(255, 255, 255, 0.1);
   margin-top: 20px;
 }
 
+// Modal Privacy (Cookies)
+
+//----------Modal 2 --------------//
+
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0);
+  opacity: 1;
+  visibility: visible;
+  transition-property: opacity, visibility;
+  transition-duration: $duration;
+  transition-timing-function: $function;
+}
+
+.modal__backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal__backdrop.is-hidden > .modal {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(2.9);
+}
+
+.modal {
+  border-radius: $modalRadius;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(1);
+  width: 90vw;
+  height: 530px;
+  padding: 15px;
+  background: $bc-color;
+  opacity: 1;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transition-property: opacity, transform;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--function);
+
+  @media screen and (min-width: 480px) {
+    height: auto;
+    width: 90vw;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 55vw;
+    max-height: 90vh;
+    background-size: cover;
+  }
+}
+
 // Modal4 to Modal2 //
 
 .modal__backdrop4 {
@@ -1624,4 +1689,76 @@ $social-background-color: rgba(255, 255, 255, 0.1);
 
 .formDesk {
   background: transparent !important;
+}
+
+.cookiebar {
+  width: 100vw;
+  background: rgb(255 188 69);
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  padding: 20px;
+  box-sizing: border-box;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 15%;
+  }
+}
+
+.cookiebar__priv {
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+.cookiebar__button {
+  padding: 10px 10px;
+  gap: 4px;
+
+  border: 1px solid #000;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  margin: 0px auto;
+
+  @media screen and (min-width: 1200px) {
+    width: 142px;
+    height: 39px;
+    padding: 16px 28px;
+  }
 }

@@ -31,8 +31,9 @@
           <li class="needPD">
             <div class="hero__list-div">
               <img class="hero__img2" src="img/starzz.png" alt="StarzGame">
-              <a class="hero__a" href="https://www.pragmaticplay.com/en/games/starz-megaways-slot/?gamelang=en&cur=USD" target="_blank">
-                <span class="heroButton">Visit website</span>
+              <a class="hero__a" href="https://www.pragmaticplay.com/en/games/starz-megaways-slot/?gamelang=en&cur=USD"
+                target="_blank">
+                <span class="heroButton"> Play Starz Megaways</span>
               </a>
             </div>
           </li>
@@ -102,15 +103,17 @@
     justify-content: center;
     align-items: center;margin-top: 15px;">
             <ul class="footerSocials">
-              <li><a href="https://facebook.com" target="_blank"><img class="footerIcons" src="img/facebook.png" alt="facebook"></a></li>
-              <li><a href="https://youtube.com" target="_blank"><img class="footerIcons" src="img/youtube.png" alt="youtube"></a></li>
-              <li><a href="https://linkedin.com" target="_blank"><img class="footerIcons" src="img/linkedin.png" alt="linkedin"></a></li>
-              <li><a href="https://vimeo.com" target="_blank"><img class="footerIcons" src="img/vimeo.png" alt="vimeo"></a></li>
+              <li><a href="https://facebook.com" target="_blank"><img class="footerIcons" src="img/facebook.png"
+                    alt="facebook"></a></li>
+              <li><a href="https://youtube.com" target="_blank"><img class="footerIcons" src="img/youtube.png"
+                    alt="youtube"></a></li>
+              <li><a href="https://linkedin.com" target="_blank"><img class="footerIcons" src="img/linkedin.png"
+                    alt="linkedin"></a></li>
+              <li><a href="https://vimeo.com" target="_blank"><img class="footerIcons" src="img/vimeo.png"
+                    alt="vimeo"></a></li>
             </ul>
           </div>
         </div>
-
-
 
   </footer>
 
@@ -202,9 +205,7 @@
 
       <div class="modal4__pad">
         <span class="modal__hero-text4">
-          <noindex>
             <h2 class="color">Privacy</h2>
-          </noindex>
 
           <noindex>
             <p class="modal__p">
@@ -237,19 +238,88 @@
               services or legal requirements. We encourage you to review this policy on a regular basis to stay up to
               date on how we collect, use, and protect your information.</p>
 
+          </span>
           </noindex>
-
-        </span>
       </div>
 
-      </span>
+    </div>
+  </div>
+
+  <!-- MODAL Privacy(2) (cookies)  -->
+
+  <div class="modal__backdrop is-hidden" data-modal>
+    <div class="modal" data-form-modal>
+
+      <button type="button" class="button__modal2" data-modal-close>
+        <svg class="icon__close3">
+          <use href="./img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <div class="modal4__pad">
+        <span class="modal__hero-text4">
+            <h2 class="color">Privacy</h2>
+
+          <noindex>
+            <p class="modal__p">
+              Welcome to StarzMegawaysSlot.com, where your privacy is of the utmost importance. We recognize the
+              importance of your personal information and take every precaution to safeguard it. Our privacy statement
+              outlines our commitment to maintaining the confidentiality, integrity, and accessibility of your
+              information.</p>
+
+            <p class="modal__p">
+              When you register on our website, make a deposit, or participate in promotions or surveys, you voluntarily
+              provide us with personal information. Your name, email address, phone number, and payment information may
+              be included. Non-personal information such as your IP address, device type, and browsing behavior is also
+              collected in order to improve our services and enhance your experience.
+            </p>
+
+            <p class="modal__p">We use your personal information to provide services to you, process transactions, and
+              communicate with you about promotions and updates. We may also use your information for marketing purposes
+              with your permission. We do not disclose any of your personal information to third parties unless it is
+              required to provide our services or comply with legal obligations.</p>
+
+            <p class="modal__p">We take security seriously and employ industry-standard security technologies and
+              procedures to protect the confidentiality and integrity of your data. We also store your personal
+              information on secure servers and follow strict data retention policies. Only authorized personnel have
+              access to your information.</p>
+
+            <p class="modal__p">At any time, you have the right to access, modify, or delete your personal information.
+            </p>
+
+            <p class="modal__p">This privacy statement may be updated from time to time to reflect changes in our
+              services or legal requirements. We encourage you to review this policy on a regular basis to stay up to
+              date on how we collect, use, and protect your information.</p>
+
+          </span>
+          </noindex>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Cookie Modal -->
+
+  <div class="cookiebar" id="bar">
+        <p>  We use cookies to analyse traffic and make your site experience relevant. <span class="cookiebar__priv"
+                data-modal-open>Privacy Policy</span></p>
+        <p class="cookiebar__button">OK</p>
     </div>
 
-  </div>
-  </div>
+    <script>
+        const okButton = document.querySelector('.cookiebar__button');
+        const privacyPolicyLink = document.querySelector('.cookiebar__priv');
 
-  <script src="./js/main.js"></script>
+        okButton.addEventListener('click', function () {
+            const cookieBar = document.querySelector('#bar');
+            cookieBar.style.display = 'none';
+        });
 
+        privacyPolicyLink.addEventListener('click', function (event) {
+            event.stopPropagation();
+        });
+    </script>
+
+<script src="./js/main.js?ver=2"></script>
 </body>
-
 </html>
