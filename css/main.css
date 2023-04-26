@@ -207,6 +207,14 @@
   align-items: center;
 }
 
+.newForm-flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 :root {
   --main-title-color: #ffffff;
   --second-title-color: #212121;
@@ -1904,6 +1912,18 @@
     height: 39px;
     padding: 16px 28px;
   }
+}
+
+.h1-none {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 100vh;
+  text-align: center;
 }
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -3824,6 +3844,18 @@ ins {
     height: 39px;
     padding: 16px 28px;
   }
+}
+
+.h1-none {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 100vh;
+  text-align: center;
 }
 
 body {

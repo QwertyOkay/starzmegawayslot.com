@@ -10,7 +10,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" media="all" href="./css/main.css?ver=5">
+    <link rel="stylesheet" media="all" href="./css/main.css?ver=6">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,13 +23,16 @@
 
 </head>
 
-<body>
+<body style="background: url(../../img/bg.png);
+    background-size: cover;">
     <main>
-        <section class="hero__section">
-            <div class="hero__container" style="margin-top: 0px;">
+        <section class="hero__section" style="height: 685px;">
+            <div class="hero__containerContact" style="margin-top: 0px;">
 
                 <div class="modal1__popup-desk formDesk">
-                    <form class="form-flex">
+
+                    <form class="form-flex" >
+                        <div class="newForm-flex" id="forms">
                         <p class="form__p">Contact us</p>
                         <input class="input-email input-email2" type="text" required placeholder="Your name"
                             autocomplete="name">
@@ -38,10 +41,12 @@
                         <input class="input-email input-email2" type="text" required placeholder="Subject">
                         <input class="input-email input-email2 textHeight" type="text"
                             placeholder="Your message (optional)">
-                        <button class="main-r-button">Submit</button>
+                        <button type="submit" class="main-r-button" id="btn" data-modal-open11 value="Click"
+                            onmousedown="viewDiv()">Submit</button>
                     </form>
+                    </div>
                 </div>
-
+<h1 id="h1-none" class="h1-none">Thank you! <br>PLaese wait a response on your email</h1>
             </div>
         </section>
     </main>
@@ -267,6 +272,27 @@
         })();
 
     </script>
+
+    <script>
+        document.getElementById("form").addEventListener('submit', function (e) {
+            e.preventDefault();
+            console.log("Form has submited");
+        });
+
+        document.getElementById("btn").addEventListener('click', function (e) {
+            document.getElementById("form").trigger("submit");
+
+        }) 
+    </script>
+
+    <script>
+
+    function viewDiv(){
+  document.getElementById("forms").style.display = "none",
+  document.getElementById("h1-none").style.display = "flex";
+};
+
+  </script>
 
 </body>
 
