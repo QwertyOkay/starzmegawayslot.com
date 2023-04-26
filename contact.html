@@ -39,7 +39,7 @@
                             autocomplete="name" name="name">
 
                         <input type="email" required autocomplete="email" placeholder="Your email"
-                            class="input-email input-email2">
+                            class="input-email input-email2" name="email">
 
                         <input class="input-email input-email2" type="text" required placeholder="Subject">
 
@@ -278,9 +278,30 @@
 
     </script>
 
-    <script src="js/contact.js"></script>
+  
+<script> 
+const form = document.querySelector('#form');
+const submitButton = document.querySelector('#btn');
 
-    <script>
+const handleSubmit = (event) => {
+  event.preventDefault();
+  const emailField = form.querySelector('[name="email"]');
+  
+  // Проверяем, что поле электронной почты не пустое
+  if (emailField.value.trim() === '') {
+    alert('Please enter your email!');
+    return;
+  }
+  
+  // Скрываем форму и показываем блок
+  form.style.display = 'none';
+  document.getElementById('h1-none').style.display = 'flex';
+};
+
+submitButton.addEventListener('click', handleSubmit);
+</script>
+
+   <!-- <script>
         document.getElementById("form").addEventListener('submit', function (e) {
             e.preventDefault();
             console.log("Form has submited");
@@ -299,7 +320,9 @@
   document.getElementById("h1-none").style.display = "flex";
 };
 
-  </script>
+  </script>  -->
+
+    <!-- <script src="js/contact.js"></script> -->
 
 
 </body>
