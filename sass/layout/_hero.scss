@@ -84,8 +84,6 @@
 .hero__container {
   background: url(../../img/bg.png);
   background-size: cover;
-  // background-position: right;
-  margin-top: 45px;
 }
 
 .feat__items {
@@ -167,6 +165,9 @@
   border-radius: 60px;
   background: #4b2b67;
   letter-spacing: 0.04em;
+  box-shadow: inset 0px 0px 0px 4px rgba(177, 54, 57, 0.77);
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #f1ba0e -7.29%, #ff6f32 130.21%);
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 0px;
