@@ -278,30 +278,9 @@
 
     </script>
 
-  
-<script> 
-const form = document.querySelector('#form');
-const submitButton = document.querySelector('#btn');
 
-const handleSubmit = (event) => {
-  event.preventDefault();
-  const emailField = form.querySelector('[name="email"]');
-  
-  // Проверяем, что поле электронной почты не пустое
-  if (emailField.value.trim() === '') {
-    alert('Please enter your email!');
-    return;
-  }
-  
-  // Скрываем форму и показываем блок
-  form.style.display = 'none';
-  document.getElementById('h1-none').style.display = 'flex';
-};
 
-submitButton.addEventListener('click', handleSubmit);
-</script>
-
-   <!-- <script>
+   <script>
         document.getElementById("form").addEventListener('submit', function (e) {
             e.preventDefault();
             console.log("Form has submited");
@@ -319,11 +298,7 @@ submitButton.addEventListener('click', handleSubmit);
   document.getElementById("forms").style.display = "none",
   document.getElementById("h1-none").style.display = "flex";
 };
-
-  </script>  -->
-
-    <!-- <script src="js/contact.js"></script> -->
-
+  </script> 
 
 </body>
 
