@@ -1763,15 +1763,13 @@ $social-background-color: rgba(255, 255, 255, 0.1);
   }
 }
 
-.h1-none {
+.submit-success {
   display: none;
-  margin-top: 20px;
-  font-size: 1.5em;
-  font-weight: 600;
+  height: 90vh;
   justify-content: center;
   align-items: center;
+  font-size: 1.5em;
+  font-weight: 600;
   color: #fff;
-  // height: 100%;
-  height: 100vh;
   text-align: center;
 }

@@ -1914,15 +1914,14 @@
   }
 }
 
-.h1-none {
+.submit-success {
   display: none;
-  margin-top: 20px;
-  font-size: 1.5em;
-  font-weight: 600;
+  height: 90vh;
   justify-content: center;
   align-items: center;
+  font-size: 1.5em;
+  font-weight: 600;
   color: #fff;
-  height: 100vh;
   text-align: center;
 }
 
@@ -3846,15 +3845,14 @@ ins {
   }
 }
 
-.h1-none {
+.submit-success {
   display: none;
-  margin-top: 20px;
-  font-size: 1.5em;
-  font-weight: 600;
+  height: 90vh;
   justify-content: center;
   align-items: center;
+  font-size: 1.5em;
+  font-weight: 600;
   color: #fff;
-  height: 100vh;
   text-align: center;
 }
 
@@ -4015,6 +4013,7 @@ a:hover {
 
 .hero__section {
   width: 100%;
+  padding: 12px 0;
   background-size: cover;
   height: auto;
 }
@@ -4328,6 +4327,7 @@ a:hover {
   margin-top: 50px;
   border-radius: 0px;
   margin-top: 15px;
+  color: #fff;
 }
 @media screen and (min-width: 1200px) {
   .input-email {

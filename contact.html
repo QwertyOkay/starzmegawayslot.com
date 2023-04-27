@@ -10,7 +10,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" media="all" href="./css/main.css?ver=6">
+    <link rel="stylesheet" media="all" href="./css/main.css?ver=8">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,11 +28,9 @@
     <main>
         <section class="hero__section" style="height: 685px;">
             <div class="hero__containerContact" style="margin-top: 0px;">
-
+                <div class="submit-success">Thank you! <br>Please wait for response on your email</div>
                 <div class="modal1__popup-desk formDesk">
-
-                    <form class="form-flex" >
-                        <div class="newForm-flex" id="forms">
+                    <form class="form-flex" id="contact-form">
                         <p class="form__p">Contact us</p>
 
                         <input class="input-email input-email2" type="text" required placeholder="Your name"
@@ -46,12 +44,9 @@
                         <input class="input-email input-email2 textHeight" type="text"
                             placeholder="Your message (optional)" name="message">
 
-                        <button type="submit" class="main-r-button" id="btn" data-modal-open11 value="Click"
-                            onmousedown="viewDiv()">Submit</button>
+                        <button type="submit" class="main-r-button" id="btn" data-modal-open11>Submit</button>
                     </form>
-                    </div>
                 </div>
-<h1 id="h1-none" class="h1-none">Thank you! <br>PLaese wait a response on your email</h1>
             </div>
         </section>
     </main>
@@ -77,6 +72,24 @@
                         <p class="footer__p-font margin">The games are intended for an adult audience (+18). The website
                             does not offer an opportunity to win real prizes. </p>
                     </noindex>
+
+                    <div style="color: #fff;display: flex;
+    justify-content: center;
+    align-items: center;margin-top: 15px;">
+                        <ul class="footerSocials">
+                            <li><a href="https://facebook.com" target="_blank"><img class="footerIcons"
+                                        src="img/facebook.png" alt="facebook"></a></li>
+                            <li><a href="https://youtube.com" target="_blank"><img class="footerIcons"
+                                        src="img/youtube.png" alt="youtube"></a></li>
+                            <li><a href="https://linkedin.com" target="_blank"><img class="footerIcons"
+                                        src="img/linkedin.png" alt="linkedin"></a></li>
+                            <li><a href="https://vimeo.com" target="_blank"><img class="footerIcons" src="img/vimeo.png"
+                                        alt="vimeo"></a></li>
+                        </ul>
+                    </div>
+                    <a href="/">
+                        <p class="footer__p-font">StarzMegawayslot.com &copy; 2022 - 2023</p>
+                    </a>
                 </div>
 
 
@@ -244,6 +257,7 @@
 
     </div>
     </div>
+    <script src="js/modal.js"></script>
 
     <script>
         (() => {
@@ -277,28 +291,6 @@
         })();
 
     </script>
-
-
-
-   <script>
-        document.getElementById("form").addEventListener('submit', function (e) {
-            e.preventDefault();
-            console.log("Form has submited");
-        });
-
-        document.getElementById("btn").addEventListener('click', function (e) {
-            document.getElementById("form").trigger("submit");
-
-        }) 
-    </script>
-
-    <script>
-
-    function viewDiv(){
-  document.getElementById("forms").style.display = "none",
-  document.getElementById("h1-none").style.display = "flex";
-};
-  </script> 
 
 </body>
 
